@@ -51,8 +51,8 @@ main {
     padding: 15px;
     margin: 10px;
     flex: 1 1 calc(30% - 20px);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgba(152, 155, 114, 0.8); 
+    box-shadow: 2px 2px 5px #000;
+    background-color: #cdd86dcb; 
     border-radius: 15px;
 }
 footer {
