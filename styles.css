@@ -3,56 +3,48 @@ body.home {
     margin: 0;
     padding: 0;
     background-image: url('https://i.pinimg.com/originals/7e/35/13/7e3513fb4484ac97d6f726123fd9e1ff.jpg'); /* Путь к изображению */
-    background-size: cover; /* Заполняет весь экран */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Не повторяет изображение */
-    color: #000000; /* Цвет текста для выделения на фоне */
+    background-size: cover; 
+    background-position:relative; 
+    background-repeat: no-repeat; 
+    color: #000000; 
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Белый фон для остальных страниц */
-    color: #000000; /* Цвет текста для остальных страниц */
+    background-color: white; 
+    color: #000000; 
 }
-
-/* Остальные стили остаются без изменений */
 header {
-    background-color: #08232e; /* Цвет фона заголовка */
-    color: white; /* Цвет текста в заголовке */
-    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+    background-color: #08232e; 
+    color: white; 
+    padding: 20px;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 15px;
 }
-
 nav a {
-    color: white; /* Цвет ссылок */
+    color: white; 
     text-decoration: none;
 }
-
 nav a:hover {
-    color: #0d0086; /* Цвет ссылок при наведении */
+    color: #0d0086; 
 }
-
 main {
     padding: 20px;
 }
-
 .cards {
     display: flex;
     flex-wrap: wrap;
     
 }
-
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -63,34 +55,49 @@ main {
     background-color: rgba(152, 155, 114, 0.8); 
     border-radius: 15px;
 }
-
 footer {
-    background-color: #08232e; /* Цвет фона подвала */
-    color: white; /* Цвет текста в подвале */
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px; 
+    background-color: #08232e; 
+    padding: 20px; 
 }
-
-/* Адаптивность */
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+}
+.contact-info, .navigation {
+    width: 45%; 
+}
+h3 {
+    margin: 0 0 10px; 
+}
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+ul li {
+    margin: 5px 0; 
+}
+ul li a {
+    text-decoration: none; 
+    color: #000; 
+}
+ul li a:hover {
+    text-decoration: underline; 
+}
 @media (max-width: 768px) {
     .card {
         flex: 1 1 100%;
     }
 }
-
 @media print {
     body {
         color: black;
         background: white;
     }
 }
-
 .about-image {
-    max-width: 100%; /* Ограничивает ширину изображения */
-    height: auto; /* Сохраняет пропорции изображения */
-    border-radius: 15px; /* Закругляет углы изображения */
-    margin-top: 10px; /* Отступ сверху */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    margin-top: 10px; 
 }
